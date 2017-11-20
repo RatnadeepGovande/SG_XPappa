@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-SemiBold.ttf">
+            <string>SourceSansPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellFriendRequest" id="3Rq-CY-sgv" customClass="TableViewCellFriendRequest" customModule="App411" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Rq-CY-sgv" id="1GX-3t-QXi">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarSmallImage" translatesAutoresizingMaskIntoConstraints="NO" id="VFK-mL-USH" customClass="DesignableImageView" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="10" y="9" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.86522069830000004" green="0.86522069830000004" blue="0.86522069830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="rzO-W9-Q83"/>
+                            <constraint firstAttribute="width" constant="50" id="yiW-2k-yqI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r05-c3-udw">
+                        <rect key="frame" x="70" y="13.5" width="130" height="20.5"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjQ-XA-bYC">
+                        <rect key="frame" x="70" y="34" width="130" height="19"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJf-u5-lm7">
+                        <rect key="frame" x="265" y="0.0" width="55" height="69.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="XeD-yj-olb"/>
+                        </constraints>
+                        <color key="tintColor" red="0.89351838829999997" green="0.25775435569999999" blue="0.20929640529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="acceptRequest"/>
+                        <connections>
+                            <action selector="acceptFriendRequest:" destination="3Rq-CY-sgv" eventType="touchUpInside" id="f9Y-a1-5R5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bi8-vI-8L9">
+                        <rect key="frame" x="210" y="0.0" width="55" height="69.5"/>
+                        <state key="normal" image="RejectRequest"/>
+                        <connections>
+                            <action selector="rejectFriendRequest:" destination="3Rq-CY-sgv" eventType="touchUpInside" id="dls-ls-5Ti"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yJf-u5-lm7" firstAttribute="top" secondItem="1GX-3t-QXi" secondAttribute="top" id="5G4-Qx-1Bs"/>
+                    <constraint firstItem="VFK-mL-USH" firstAttribute="centerY" secondItem="1GX-3t-QXi" secondAttribute="centerY" id="6Nj-3Q-v8h"/>
+                    <constraint firstItem="r05-c3-udw" firstAttribute="leading" secondItem="VFK-mL-USH" secondAttribute="trailing" constant="10" id="Aqp-fN-G1y"/>
+                    <constraint firstItem="bi8-vI-8L9" firstAttribute="leading" secondItem="r05-c3-udw" secondAttribute="trailing" constant="10" id="De4-4y-aeO"/>
+                    <constraint firstAttribute="bottom" secondItem="yJf-u5-lm7" secondAttribute="bottom" id="Iew-LD-Igh"/>
+                    <constraint firstItem="SjQ-XA-bYC" firstAttribute="top" secondItem="r05-c3-udw" secondAttribute="bottom" id="J0i-ci-teW"/>
+                    <constraint firstItem="r05-c3-udw" firstAttribute="bottom" secondItem="VFK-mL-USH" secondAttribute="centerY" id="JeA-tn-EU1"/>
+                    <constraint firstAttribute="trailing" secondItem="yJf-u5-lm7" secondAttribute="trailing" id="VqV-oc-SyX"/>
+                    <constraint firstItem="VFK-mL-USH" firstAttribute="leading" secondItem="1GX-3t-QXi" secondAttribute="leading" constant="10" id="XWW-5C-yeA"/>
+                    <constraint firstItem="SjQ-XA-bYC" firstAttribute="trailing" secondItem="r05-c3-udw" secondAttribute="trailing" id="ZTn-FP-7Dl"/>
+                    <constraint firstItem="SjQ-XA-bYC" firstAttribute="leading" secondItem="r05-c3-udw" secondAttribute="leading" id="ZkQ-Gq-prE"/>
+                    <constraint firstItem="bi8-vI-8L9" firstAttribute="top" secondItem="1GX-3t-QXi" secondAttribute="top" id="b1s-pP-OTz"/>
+                    <constraint firstItem="yJf-u5-lm7" firstAttribute="leading" secondItem="bi8-vI-8L9" secondAttribute="trailing" id="fld-Rc-2ua"/>
+                    <constraint firstItem="yJf-u5-lm7" firstAttribute="width" secondItem="bi8-vI-8L9" secondAttribute="width" id="oCE-10-EAb"/>
+                    <constraint firstAttribute="bottom" secondItem="bi8-vI-8L9" secondAttribute="bottom" id="u8E-fT-6iv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptFriendRequestButton" destination="yJf-u5-lm7" id="QYd-vT-HID"/>
+                <outlet property="imageView_image" destination="VFK-mL-USH" id="HIU-e7-iO8"/>
+                <outlet property="label_Title" destination="r05-c3-udw" id="hEP-eE-uGO"/>
+                <outlet property="label_description" destination="SjQ-XA-bYC" id="dEc-0B-xu7"/>
+                <outlet property="rejectFriendRequestButton" destination="bi8-vI-8L9" id="7jt-zs-OTR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RejectRequest" width="40" height="40"/>
+        <image name="acceptRequest" width="40" height="40"/>
+        <image name="avatarSmallImage" width="50" height="50"/>
+    </resources>
+</document>

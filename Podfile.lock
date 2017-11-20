@@ -1,0 +1,136 @@
+PODS:
+  - ActionCableClient (0.2.3):
+    - Starscream (~> 2.0.0)
+  - Alamofire (4.5.1)
+  - Atlas (1.1.2):
+    - LayerKit (>= 0.26.9)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Braintree (4.8.7):
+    - Braintree/Card (= 4.8.7)
+    - Braintree/Core (= 4.8.7)
+    - Braintree/PayPal (= 4.8.7)
+    - Braintree/UI (= 4.8.7)
+  - Braintree/Card (4.8.7):
+    - Braintree/Core
+  - Braintree/Core (4.8.7)
+  - Braintree/PayPal (4.8.7):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.8.7):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.8.7):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.8.7)
+  - Braintree/UI (4.8.7):
+    - Braintree/Card
+    - Braintree/Core
+  - Branch (0.17.10):
+    - Branch/Core (= 0.17.10)
+  - Branch/Core (0.17.10)
+  - CCBottomRefreshControl (0.5.2)
+  - Cloudinary (2.0.2):
+    - Alamofire (~> 4.1)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FacebookShare (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKShareKit (~> 4.15)
+  - FBSDKCoreKit (4.26.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.26.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.26.0):
+    - FBSDKCoreKit
+  - FSCalendar (2.7.9)
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.4.0):
+    - GoogleMaps (= 2.4.0)
+    - GooglePlaces (= 2.4.0)
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - Koloda (4.1):
+    - pop (~> 1.0)
+  - LayerKit (0.26.9)
+  - MBProgressHUD (1.0.0)
+  - ObjectMapper (2.2.8)
+  - pop (1.0.10)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Starscream (2.0.4)
+  - SVProgressHUD (2.2)
+  - UberRides (0.7.0)
+
+DEPENDENCIES:
+  - ActionCableClient
+  - Atlas
+  - Braintree
+  - Branch
+  - CCBottomRefreshControl
+  - Cloudinary (~> 2.0)
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
+  - FSCalendar
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - Koloda (~> 4.0)
+  - MBProgressHUD (~> 1.0.0)
+  - ObjectMapper (~> 2.2)
+  - SDWebImage (~> 3.8)
+  - SVProgressHUD
+  - UberRides (~> 0.7)
+
+SPEC CHECKSUMS:
+  ActionCableClient: c8a466410d31bfa14e7a9c209b539c1e2d026a5f
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Atlas: cc424d428785af619e62499a8c217664f9860310
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Braintree: ce12a740328db024ae3bb284551e78d8cc34e57c
+  Branch: 29745957de17eb5973627f4c7720bd0eb390fd45
+  CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
+  Cloudinary: 2d7c889fc4329ebc59c7967ec277df882b2602d5
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FacebookShare: 8e9ee8ea06505e6a1d3d719b0cc63e840fb8aaeb
+  FBSDKCoreKit: c8b8582311ec11b145451d8b9717dc6cc2ae5a76
+  FBSDKLoginKit: f3f03b94c21eb834af243c0a881d48641f47ca60
+  FBSDKShareKit: 320712d8293fde6392872c91eb80ef0da5d73cc3
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlacePicker: 755f10343d71280c7b016823e73fbae9625dfa8a
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  Koloda: 6c4fa3ce9a68776a8ef973311e53fdda432799a8
+  LayerKit: 73da59418761112a5bbcaf12b1fb39a813cf4886
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Starscream: df5974ee928b157c8eda8af8de7c620276b7dfcc
+  SVProgressHUD: 3f37f3409ddb15f35c99315ae7dc33c474aa3256
+  UberRides: 2e254e4de3acea4c4a4529c4d8455a2e4de51632
+
+PODFILE CHECKSUM: 983d6bd79d6ed273c2e8e1baceec2fd8f5ab5a25
+
+COCOAPODS: 1.2.1

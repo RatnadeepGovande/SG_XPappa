@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+        <array key="SourceSansPro-SemiBold.ttf">
+            <string>SourceSansPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIViewSignUPVerificationView" customModule="App411">
+            <connections>
+                <outlet property="constraintYOTP" destination="xvE-by-JM2" id="Wf7-gE-nnx"/>
+                <outlet property="label_ShowVerfiyMsg" destination="Y1O-8H-dYh" id="oin-ob-HTg"/>
+                <outlet property="textField_Verification" destination="xpJ-kz-SuS" id="hDZ-nX-U4J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-oj-xxk" customClass="DesignableView" customModule="App411" customModuleProvider="target">
+                    <rect key="frame" x="30" y="133.5" width="315" height="400"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Enter OTP code" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xpJ-kz-SuS">
+                            <rect key="frame" x="19" y="231.5" width="276" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="MPH-5F-tSY"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP code to verify " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1O-8H-dYh">
+                            <rect key="frame" x="19" y="195" width="276" height="16.5"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kca-zM-ZN5">
+                            <rect key="frame" x="19" y="165" width="276" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="DY8-Lb-yfb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeLoginAppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="N8C-Pr-GzY">
+                            <rect key="frame" x="92" y="25" width="130" height="130"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="JFO-wO-iTq"/>
+                                <constraint firstAttribute="height" constant="130" id="O7q-6k-nXJ"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufr-zN-Jdv">
+                            <rect key="frame" x="265" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="OqY-GL-Kx4"/>
+                                <constraint firstAttribute="height" constant="50" id="YSd-ML-eoh"/>
+                            </constraints>
+                            <state key="normal" image="CrossIcon"/>
+                            <connections>
+                                <action selector="clickOnCrossButton:" destination="-1" eventType="touchUpInside" id="s7Z-Xa-a0q"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-KZ-5EM">
+                            <rect key="frame" x="158" y="341.5" width="137" height="29"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                            <state key="normal" title="Didn't receive e-mail?"/>
+                            <connections>
+                                <action selector="resetOTPAtEmail:" destination="-1" eventType="touchUpInside" id="nde-5v-xOX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4m-b6-ebc">
+                            <rect key="frame" x="19" y="286.5" width="276" height="45"/>
+                            <color key="backgroundColor" red="0.89351838829999997" green="0.25775435569999999" blue="0.20929640529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ats-Zd-f2f"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="15"/>
+                            <state key="normal" title="Send">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sendButtonClick:" destination="-1" eventType="touchUpInside" id="uqG-4Q-gJd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Y1O-8H-dYh" firstAttribute="top" secondItem="kca-zM-ZN5" secondAttribute="bottom" constant="10" id="Eym-XH-a23"/>
+                        <constraint firstItem="Y1O-8H-dYh" firstAttribute="trailing" secondItem="kca-zM-ZN5" secondAttribute="trailing" id="Gtl-62-EdW"/>
+                        <constraint firstItem="xpJ-kz-SuS" firstAttribute="trailing" secondItem="Y1O-8H-dYh" secondAttribute="trailing" id="It9-uX-Drd"/>
+                        <constraint firstAttribute="trailing" secondItem="ufr-zN-Jdv" secondAttribute="trailing" id="J8C-Ga-HaX"/>
+                        <constraint firstItem="Z4m-b6-ebc" firstAttribute="leading" secondItem="xpJ-kz-SuS" secondAttribute="leading" id="LnM-MK-emy"/>
+                        <constraint firstItem="xpJ-kz-SuS" firstAttribute="leading" secondItem="Y1O-8H-dYh" secondAttribute="leading" id="Pea-tx-Vr2"/>
+                        <constraint firstItem="Z4m-b6-ebc" firstAttribute="trailing" secondItem="xpJ-kz-SuS" secondAttribute="trailing" id="XDc-e9-fHv"/>
+                        <constraint firstItem="ufr-zN-Jdv" firstAttribute="top" secondItem="yfW-oj-xxk" secondAttribute="top" id="YCo-8e-FY6"/>
+                        <constraint firstItem="Z4m-b6-ebc" firstAttribute="top" secondItem="xpJ-kz-SuS" secondAttribute="bottom" constant="10" id="cie-Az-FXy"/>
+                        <constraint firstItem="kca-zM-ZN5" firstAttribute="top" secondItem="N8C-Pr-GzY" secondAttribute="bottom" constant="10" id="fUC-iJ-TTs"/>
+                        <constraint firstItem="N8C-Pr-GzY" firstAttribute="centerX" secondItem="yfW-oj-xxk" secondAttribute="centerX" id="g9z-ID-7LB"/>
+                        <constraint firstAttribute="height" constant="400" id="glo-mS-yqp"/>
+                        <constraint firstItem="Qfe-KZ-5EM" firstAttribute="trailing" secondItem="Z4m-b6-ebc" secondAttribute="trailing" id="h2g-Fg-iGo"/>
+                        <constraint firstItem="N8C-Pr-GzY" firstAttribute="top" secondItem="yfW-oj-xxk" secondAttribute="top" constant="25" id="iU8-9L-wFm"/>
+                        <constraint firstItem="Qfe-KZ-5EM" firstAttribute="top" secondItem="Z4m-b6-ebc" secondAttribute="bottom" constant="10" id="iqt-EQ-How"/>
+                        <constraint firstItem="Y1O-8H-dYh" firstAttribute="leading" secondItem="kca-zM-ZN5" secondAttribute="leading" id="mhe-99-rwK"/>
+                        <constraint firstAttribute="trailing" secondItem="Qfe-KZ-5EM" secondAttribute="trailing" constant="20" id="tMs-k3-uMP"/>
+                        <constraint firstItem="xpJ-kz-SuS" firstAttribute="top" secondItem="Y1O-8H-dYh" secondAttribute="bottom" constant="20" id="u3b-xd-PY7"/>
+                        <constraint firstItem="kca-zM-ZN5" firstAttribute="centerX" secondItem="N8C-Pr-GzY" secondAttribute="centerX" id="ug1-K0-nFp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornurRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.65439116379999995" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yfW-oj-xxk" secondAttribute="trailing" constant="30" id="BV5-pL-Imx"/>
+                <constraint firstItem="yfW-oj-xxk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="Y8x-8o-11F"/>
+                <constraint firstItem="yfW-oj-xxk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bUA-oV-Vja"/>
+                <constraint firstItem="yfW-oj-xxk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xvE-by-JM2"/>
+            </constraints>
+            <point key="canvasLocation" x="-54.5" y="58.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CrossIcon" width="30" height="30"/>
+        <image name="HomeLoginAppIcon" width="130" height="130"/>
+    </resources>
+</document>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BlockedTableViewCell" id="KGk-i7-Jjw" customClass="BlockedTableViewCell" customModule="App411" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarSmallImage" translatesAutoresizingMaskIntoConstraints="NO" id="NSL-yo-IyM" customClass="DesignableImageView" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="10" y="2" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.86522069830000004" green="0.86522069830000004" blue="0.86522069830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Z4u-wr-3o2"/>
+                            <constraint firstAttribute="height" constant="40" id="cPz-oY-31C"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.90000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qa-Uf-COG" customClass="DesignableButton" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="227" y="6.5" width="80" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="q8a-WX-7Nc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="13"/>
+                        <state key="normal" title="Unblocked">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickonButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dTC-ht-Ywl"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXd-rR-thk" customClass="ActiveLabel" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="58" y="11.5" width="159" height="21"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tXd-rR-thk" firstAttribute="leading" secondItem="NSL-yo-IyM" secondAttribute="trailing" constant="8" id="1Zm-T0-4fr"/>
+                    <constraint firstItem="NSL-yo-IyM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9fW-bn-Bid"/>
+                    <constraint firstItem="1Qa-Uf-COG" firstAttribute="leading" secondItem="tXd-rR-thk" secondAttribute="trailing" constant="10" id="HAc-lE-0Bz"/>
+                    <constraint firstItem="1Qa-Uf-COG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ui8-5f-2M8"/>
+                    <constraint firstItem="NSL-yo-IyM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="k4i-XH-lUP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1Qa-Uf-COG" secondAttribute="trailing" constant="5" id="lfd-TB-m9l"/>
+                    <constraint firstItem="tXd-rR-thk" firstAttribute="centerY" secondItem="NSL-yo-IyM" secondAttribute="centerY" id="vjs-hQ-gMC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImage" destination="NSL-yo-IyM" id="snJ-hV-pKf"/>
+                <outlet property="nameLabel" destination="tXd-rR-thk" id="5It-c0-80e"/>
+                <outlet property="removeButton" destination="1Qa-Uf-COG" id="96l-HW-j9D"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatarSmallImage" width="50" height="50"/>
+    </resources>
+</document>

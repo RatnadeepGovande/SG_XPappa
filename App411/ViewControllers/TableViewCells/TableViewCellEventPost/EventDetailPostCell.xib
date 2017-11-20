@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventDetailPostCell" id="MY4-sn-rbG" customClass="EventDetailPostCell" customModule="App411" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MY4-sn-rbG" id="7ui-Tf-oV8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dM3-T9-8RD" customClass="DesignableImageView" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="13" y="10" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="QdP-jr-lBP"/>
+                            <constraint firstAttribute="height" constant="50" id="abo-M7-obO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="textt" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngb-NE-daK" customClass="ActiveLabel" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="15" y="70" width="290" height="20"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGn-Io-E1D" customClass="DesignableButton" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="250" y="14.5" width="60" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="44C-Gf-vPx"/>
+                            <constraint firstAttribute="height" constant="30" id="Dv9-GN-SWt"/>
+                        </constraints>
+                        <color key="tintColor" red="0.99610036611557007" green="0.16367530822753906" blue="0.0061780768446624279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Like">
+                            <color key="titleColor" red="0.99610036611557007" green="0.16367530822753906" blue="0.0061780768446624279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" title="Liked"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.99610036611557007" green="0.16367530822753906" blue="0.0061780768446624279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="clickOnLikeButton:" destination="MY4-sn-rbG" eventType="touchUpInside" id="ijF-82-fNW"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rxh-db-waR" customClass="DesignableImageView" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="8" y="100" width="302" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="cDr-Ry-TEp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2p-Vo-hei" customClass="ActiveLabel" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="71" y="14" width="169" height="22"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JGn-Io-E1D" firstAttribute="top" secondItem="7ui-Tf-oV8" secondAttribute="topMargin" constant="6.5" id="1Zv-oy-sZG"/>
+                    <constraint firstItem="Ngb-NE-daK" firstAttribute="leading" secondItem="7ui-Tf-oV8" secondAttribute="leading" constant="15" id="6rg-pD-dcz"/>
+                    <constraint firstAttribute="trailing" secondItem="Ngb-NE-daK" secondAttribute="trailing" constant="15" id="78H-H2-6bc"/>
+                    <constraint firstItem="Ngb-NE-daK" firstAttribute="top" secondItem="dM3-T9-8RD" secondAttribute="bottom" constant="10" id="HSM-Dr-fSm"/>
+                    <constraint firstItem="Rxh-db-waR" firstAttribute="leading" secondItem="7ui-Tf-oV8" secondAttribute="leading" constant="8" id="Jhr-r5-vg9"/>
+                    <constraint firstItem="dM3-T9-8RD" firstAttribute="top" secondItem="7ui-Tf-oV8" secondAttribute="topMargin" constant="2" id="M1J-4l-Ayc"/>
+                    <constraint firstItem="JGn-Io-E1D" firstAttribute="leading" secondItem="X2p-Vo-hei" secondAttribute="trailing" constant="10" id="PcF-IA-5sM"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Rxh-db-waR" secondAttribute="bottom" constant="1.5" id="Z2c-cJ-gob"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ngb-NE-daK" secondAttribute="bottom" priority="750" constant="20" id="a6r-0M-R6U"/>
+                    <constraint firstAttribute="trailing" secondItem="JGn-Io-E1D" secondAttribute="trailing" constant="10" id="a8k-Cp-n7R"/>
+                    <constraint firstItem="X2p-Vo-hei" firstAttribute="leading" secondItem="dM3-T9-8RD" secondAttribute="trailing" constant="8" id="f2L-LN-MaM"/>
+                    <constraint firstItem="Rxh-db-waR" firstAttribute="top" secondItem="Ngb-NE-daK" secondAttribute="bottom" priority="749" constant="10" id="gvz-mA-uof"/>
+                    <constraint firstItem="X2p-Vo-hei" firstAttribute="top" secondItem="7ui-Tf-oV8" secondAttribute="top" constant="14" id="hGI-3p-Pqo"/>
+                    <constraint firstItem="dM3-T9-8RD" firstAttribute="leading" secondItem="7ui-Tf-oV8" secondAttribute="leadingMargin" constant="5" id="pd7-RF-3mp"/>
+                    <constraint firstAttribute="trailing" secondItem="Rxh-db-waR" secondAttribute="trailing" constant="10" id="yV8-Y0-uIB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Z2c-cJ-gob"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView_Image" destination="dM3-T9-8RD" id="vEc-8G-eI1"/>
+                <outlet property="label_Text" destination="Ngb-NE-daK" id="b1t-lI-J9c"/>
+                <outlet property="label_name" destination="X2p-Vo-hei" id="9Bh-3y-9D3"/>
+                <outlet property="likeButton" destination="JGn-Io-E1D" id="0sG-9F-aAz"/>
+                <outlet property="postImage" destination="Rxh-db-waR" id="r77-h8-Gkq"/>
+                <outlet property="postImageConstraint" destination="cDr-Ry-TEp" id="HlQ-Pe-Rvh"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="-7"/>
+        </tableViewCell>
+    </objects>
+</document>

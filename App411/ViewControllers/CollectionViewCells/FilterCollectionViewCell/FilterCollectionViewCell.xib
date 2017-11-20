@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-SemiBold.ttf">
+            <string>SourceSansPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterCollectionViewCell" id="gTV-IL-0wX" customClass="FilterCollectionViewCell" customModule="App411" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ute-ft-PZY" customClass="DesignableView" customModule="App411" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="90" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmH-5l-yef">
+                                <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-SemiBold" family="Source Sans Pro" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNb-9C-XyV" customClass="DesignableView" customModule="App411" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TickImage" translatesAutoresizingMaskIntoConstraints="NO" id="p2d-Jh-MtP">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="p2d-Jh-MtP" firstAttribute="top" secondItem="QNb-9C-XyV" secondAttribute="top" id="Fxb-Mk-Isi"/>
+                                    <constraint firstAttribute="bottom" secondItem="p2d-Jh-MtP" secondAttribute="bottom" id="H8n-TS-52D"/>
+                                    <constraint firstAttribute="trailing" secondItem="p2d-Jh-MtP" secondAttribute="trailing" id="Vsd-dy-Nq9"/>
+                                    <constraint firstItem="p2d-Jh-MtP" firstAttribute="leading" secondItem="QNb-9C-XyV" secondAttribute="leading" id="ppL-TG-sMU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QNb-9C-XyV" secondAttribute="bottom" id="218-PN-CtM"/>
+                            <constraint firstItem="QNb-9C-XyV" firstAttribute="leading" secondItem="ute-ft-PZY" secondAttribute="leading" id="9vA-Cf-yWO"/>
+                            <constraint firstAttribute="bottom" secondItem="zmH-5l-yef" secondAttribute="bottom" constant="5" id="DER-j7-Cgq"/>
+                            <constraint firstItem="zmH-5l-yef" firstAttribute="leading" secondItem="ute-ft-PZY" secondAttribute="leading" constant="5" id="JxT-uM-LGH"/>
+                            <constraint firstAttribute="trailing" secondItem="zmH-5l-yef" secondAttribute="trailing" constant="5" id="WPX-zw-5bO"/>
+                            <constraint firstItem="QNb-9C-XyV" firstAttribute="top" secondItem="ute-ft-PZY" secondAttribute="top" id="WV0-O5-zys"/>
+                            <constraint firstItem="zmH-5l-yef" firstAttribute="top" secondItem="ute-ft-PZY" secondAttribute="top" constant="5" id="epp-bC-pcJ"/>
+                            <constraint firstAttribute="trailing" secondItem="QNb-9C-XyV" secondAttribute="trailing" id="i72-co-Mql"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="45"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ute-ft-PZY" secondAttribute="bottom" constant="5" id="7Ad-UE-v3L"/>
+                <constraint firstItem="ute-ft-PZY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="adV-Ix-ddf"/>
+                <constraint firstAttribute="trailing" secondItem="ute-ft-PZY" secondAttribute="trailing" constant="5" id="dhn-FI-ofM"/>
+                <constraint firstItem="ute-ft-PZY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="py7-6y-IF0"/>
+            </constraints>
+            <size key="customSize" width="181" height="164"/>
+            <connections>
+                <outlet property="labelText" destination="zmH-5l-yef" id="RcC-zm-SBu"/>
+                <outlet property="viewBackground" destination="ute-ft-PZY" id="GXt-wV-Qm1"/>
+                <outlet property="viewCheckBox" destination="QNb-9C-XyV" id="E47-nm-14L"/>
+            </connections>
+            <point key="canvasLocation" x="-2.5" y="75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="TickImage" width="30" height="30"/>
+    </resources>
+</document>
